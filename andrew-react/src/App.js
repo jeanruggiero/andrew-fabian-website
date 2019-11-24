@@ -2,34 +2,19 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import HeaderBar from "./components/HeaderBar";
+import NavIcon from "./components/NavButton";
+import { ThemeProvider } from "@material-ui/core/styles"
+import andrewTheme from "./styles";
+import NavBar from "./components/NavBar";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
+
+export default function App() {
+  return (
+    <div>
+      <ThemeProvider theme={andrewTheme}>
         <HeaderBar/>
-      </div>
-    )
-  }
+        <NavBar/>
+      </ThemeProvider>
+    </div>
+  );
 }
-  // return (
-  //   <div className="App">
-  //     <header className="App-header">
-  //       <img src={logo} className="App-logo" alt="logo" />
-  //       <p>
-  //         Edit <code>src/App.js</code> and save to reload.
-  //       </p>
-  //       <a
-  //         className="App-link"
-  //         href="https://reactjs.org"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //       >
-  //         Learn React
-  //       </a>
-  //     </header>
-  //   </div>
-  // );
-//}
-
-export default App;
