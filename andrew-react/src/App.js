@@ -10,6 +10,7 @@ import ContentAbout from "./components/ContentAbout"
 import HighlightsBar from "./components/HighlightsBar";
 import Footer from "./components/Footer";
 import ContentResume from "./components/ContentResume";
+import ContentContact from "./components/ContentContact";
 
 
 export default function App() {
@@ -19,7 +20,8 @@ export default function App() {
         <HeaderBar/>
         <NavBar/>
         {/*<ContentAbout />*/}
-        <ContentResume/>
+        {/*<ContentResume/>*/}
+        <ContentContact/>
         <HighlightsBar/>
         <Footer/>
       </ThemeProvider>
