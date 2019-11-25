@@ -11,9 +11,33 @@ let andrewTheme = createMuiTheme({
         fontWeight: "800",
         letterSpacing: "0.9px",
         fontSize: "small",
-      }
-    }
+      },
+      h2: {
+        color: green[900],
+        fontWeight: "500",
+      },
+      body1: {
+        fontFamily: '"Merriweather", serif',
+        fontSize: "14px",
+        lineHeight: "22px",
+        color: grey[700],
+      },
+      overline: {
+        color: green[800],
+        letterSpacing: "2px",
+        fontWeight: "bold",
+      },
+    },
+    // MuiCard: {
+    //   boxShadow: "0",
+    //   elevation: "0",
+    //   square: "true",
+    //   raised: "true",
+    // }
   },
+  // shape: {
+  //   borderRadius: 0,
+  // },
   typography: {
     fontFamily: '"Libre Franklin", sans-serif, "Merriweather", serif',
   },
