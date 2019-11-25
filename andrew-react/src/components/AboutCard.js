@@ -4,7 +4,7 @@ import {Typography} from "@material-ui/core";
 
 const AboutCard = () => {
   return (
-    <Card className="about-card" boxShadow={0} square="true">
+    <Card className="about-card" boxShadow={0} squared="true">
       <img src={require("../images/fabian_headshot_rect.svg")}
            alt="Professional headshot of Andrew Fabian" />
       <div className="about-card-text">

@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/Typography";
 
 const Highlight = (props) => {
   return (
-    <Card className="highlight" square="true">
+    <Card className="highlight" squared="true">
       <img src={require('../images/' + props.image_file)}
            alt={props.image_alt} />
       <div className="highlight-text">

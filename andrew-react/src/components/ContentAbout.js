@@ -13,7 +13,7 @@ const ContentAbout = () => {
         </Typography>
 
         <Typography variant="body1">
-          Andrew Fabian is a mechanical engineer at Boeing and a graduate student in the MIT Leaders for Global Operations Program. He is currently pursuing masters degrees in mechanical engineering (MS) and business administration (MBA). His academic interests include operations management, systems thinking, and organizational processes. He is active in the LGO Director’s Advisory Committee and Partner Relations Committee. He also serves on the board of the MIT Robo-AI Exchange conference.
+          Andrew is a mechanical engineer at Boeing and a graduate student in the MIT Leaders for Global Operations Program. He is currently pursuing masters degrees in mechanical engineering (MS) and business administration (MBA). His academic interests include operations management, systems thinking, and organizational processes. He is active in the LGO Director’s Advisory Committee and Partner Relations Committee. He also serves on the board of the MIT Robo-AI Exchange conference.
         </Typography>
 
         <Typography variant="body1">

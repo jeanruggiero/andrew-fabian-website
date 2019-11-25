@@ -11,7 +11,7 @@ function NavButton(props) {
 
   return(
       <div className="nav-button">
-        <Fab color="secondary" aria-label={props.text} className="nav-button">
+        <Fab color="secondary" aria-label={props.text} className="nav-button" onClick={props.onClick}>
           <Icon size="large">{props.icon}</Icon>
         </Fab>
 
