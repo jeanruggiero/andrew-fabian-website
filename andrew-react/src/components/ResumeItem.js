@@ -1,7 +1,5 @@
 import React from "react";
 import {Box, Container, Typography } from "@material-ui/core";
-import { grey } from "@material-ui/core/colors"
-
 
 const ResumeItem = (props) => {
   let gpa;

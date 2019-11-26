@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import HeaderBar from "./components/HeaderBar";
 import { ThemeProvider } from "@material-ui/core/styles"
 import andrewTheme from "./styles";
@@ -16,15 +15,13 @@ import {Box, Container} from "@material-ui/core";
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {panel: 'resume'};
+    this.state = {panel: 'contact'};
     this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick(panel) {
     this.setState({panel: panel});
   }
-
-
 
   renderContent() {
     switch (this.state.panel) {
@@ -42,7 +39,6 @@ export default class App extends React.Component {
   render() {
     console.log("rendering");
     return (
-
       <ThemeProvider theme={andrewTheme}>
           <HeaderBar/>
 
@@ -56,7 +52,6 @@ export default class App extends React.Component {
             <Footer/>
           </Box>
       </ThemeProvider>
-
-    );
+    )
   }
 };

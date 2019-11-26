@@ -1,14 +1,7 @@
 import React from 'react';
-// import { makeStyles } from "@material-ui/core/styles";
 import { createMuiTheme, responsiveFontSizes} from "@material-ui/core/styles"
 import green from '@material-ui/core/colors/green';
 import grey from '@material-ui/core/colors/grey';
-
-const palette = {
-  primary: { main: '#FAFAFA' },
-  secondary: { main: '#2E7D32' }
-};
-
 
 
 let andrewTheme = createMuiTheme({

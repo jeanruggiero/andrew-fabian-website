@@ -1,45 +1,33 @@
 import React from "react";
-import {Icon, Typography} from "@material-ui/core";
+import { Typography, Box } from "@material-ui/core";
+import ContactInfo from "./ContactInfo";
 
 const ContentContact = () => {
   return (
-    <div className="content">
-      <Typography variant="h2">
-        Contact Information
-      </Typography>
-
-      <div className="contact-info">
-        <Icon>email</Icon>
-        <Typography variant="body1">
-          asfabian@mit.edu
+    <Box>
+      <Box pt={3} pb={2}>
+        <Typography variant="h2">
+          Contact Information
         </Typography>
-      </div>
+      </Box>
 
-      <div className="contact-info">
-        <Icon>call</Icon>
-        <Typography variant="body1">
-          408-506-5444
-        </Typography>
-      </div>
+      <Box px={1}>
+        <ContactInfo icon="email"
+                     address="asfabian@mit.edu"
+                     href="mailto:asfabian@mit.edu"/>
 
-      <div className="contact-info">
-        <Icon>place</Icon>
-        <Typography variant="body1">
-          Cambridge, MA
-        </Typography>
-      </div>
+        <ContactInfo icon="call"
+                     address="408-506-5444"
+                     href="tel:408-506-5444"/>
 
-      <div className="contact-info">
-        <Icon>phone</Icon>
-        <a href="www.linkedin.com/in/andrewsfabian">
-          <Typography variant="body1">
-            linkedin.com/in/andrewsfabian
-          </Typography>
-        </a>
-      </div>
+        <ContactInfo icon="place" address="Cambridge, MA"/>
 
+        <ContactInfo icon="account_circle"
+                     address="linkedin.com/in/andrewsfabian"
+                     href="https://linkedin.com/in/andrewsfabian"/>
+      </Box>
 
-    </div>
+    </Box>
   )
 };
 

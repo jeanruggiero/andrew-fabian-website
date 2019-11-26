@@ -4,7 +4,7 @@ import Highlight from "./Highlight";
 
 const HighlightsBar = () => {
   return (
-    <Box pb={3}>
+    <Box py={3}>
       <Box pl={1} pb={0.5}>
         <Typography variant="overline">
           Highlights
