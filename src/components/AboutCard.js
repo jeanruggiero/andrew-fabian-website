@@ -6,7 +6,7 @@ const AboutCard = () => {
     <Card elevation={1}>
       <CardMedia
         component="img"
-        image={require("../images/fabian_headshot_rect.svg")}
+        image={require("../images/fabian_headshot_rect.jpg")}
         title="Andrew Fabian" />
 
       <CardContent className="about-card-text">
