@@ -1,16 +1,14 @@
 import React from 'react';
-import {Toolbar, AppBar, Typography, Box} from "@material-ui/core";
+import {Toolbar, AppBar, Typography } from "@material-ui/core";
 
 
 function HeaderBar() {
   return(
     <AppBar position='static' className="app-bar">
       <Toolbar>
-        <Box pt={2}>
-          <Typography variant="h1">
-            Andrew Fabian
-          </Typography>
-        </Box>
+        <Typography variant="h1">
+          Andrew Fabian
+        </Typography>
       </Toolbar>
     </AppBar>
   );

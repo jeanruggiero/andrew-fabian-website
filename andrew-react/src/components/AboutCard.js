@@ -3,9 +3,10 @@ import { Card, CardContent, CardMedia, Typography, Box } from "@material-ui/core
 
 const AboutCard = () => {
   return (
-    <Card className="about-card">
+    <Card elevation={1}>
       <CardMedia
-        image="%PUBLIC_URL%/static/fabian_headshot_rect.svg"
+        component="img"
+        image={require("../images/fabian_headshot_rect.svg")}
         title="Andrew Fabian" />
 
       <CardContent className="about-card-text">

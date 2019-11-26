@@ -1,38 +1,46 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
+import {Box, Container, Typography } from "@material-ui/core";
+import { grey } from "@material-ui/core/colors"
 
 
 const ResumeItem = (props) => {
   let gpa;
 
   if (props.gpa) {
-    gpa = (<Typography variant="body1">
-            {props.gpa}
-          </Typography>)
+    gpa = (
+      <Box display="inline-block" pl="30px">
+        <Typography variant="body1">
+          {props.gpa}
+        </Typography>
+      </Box>)
   }
 
   return (
-    <div className="resume-item">
-      <Typography variant="overline">
-        {props.company}
-      </Typography>
-
-      <Typography variant="h3">
-        {props.title}
-      </Typography>
-
-      <div className="resume-date">
-        <Typography variant="body1">
-          {props.date}
+    <Box pb={2}>
+      <Box pb={0.8}>
+        <Typography variant="overline">
+          {props.company}
         </Typography>
+      </Box>
+
+      <Box pb={0.2}>
+        <Typography variant="h3">
+          {props.title}
+        </Typography>
+      </Box>
+
+      <Box>
+        <Box display="inline-block">
+          <Typography variant="body1" color="textPrimary">
+            {props.date}
+          </Typography>
+        </Box>
 
         {gpa}
-      </div>
+      </Box>
 
-      <Typography variant="body1">
         {props.children}
-      </Typography>
-    </div>
+    </Box>
   )
 };
 

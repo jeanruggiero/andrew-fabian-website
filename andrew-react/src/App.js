@@ -16,7 +16,7 @@ import {Box, Container} from "@material-ui/core";
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {panel: 'about'};
+    this.state = {panel: 'resume'};
     this.handleClick = this.handleClick.bind(this)
   }
 

@@ -1,7 +1,6 @@
 import React from "react";
+import {Box, Typography} from "@material-ui/core";
 import AboutCard from "./AboutCard";
-import {Box, Container, Typography} from "@material-ui/core";
-//import {spacing } from "@material-ui/system"
 
 const ContentAbout = () => {
   return (

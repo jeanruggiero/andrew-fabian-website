@@ -1,13 +1,17 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
+import {Box, Typography, Link } from "@material-ui/core";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <Box display="flex" justifyContent="center">
       <Typography variant="body2">
-        Site created & designed by Jean Ruggiero &ndash; 2019
+        Site created & designed by&nbsp;
+        <Link href="http://jeanmruggiero.com/" color="primary.dark" style={{fontWeight: 500}}>
+          Jean Ruggiero
+        </Link>
+         &nbsp;&ndash; 2019
       </Typography>
-    </div>
+    </Box>
   )
 };
 
