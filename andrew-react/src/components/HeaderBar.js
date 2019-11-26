@@ -1,12 +1,17 @@
 import React from 'react';
-import AppBar from "@material-ui/core/AppBar";
-import Typography from "@material-ui/core/Typography";
-// import { sizing } from '@material-ui/system';
+import {Toolbar, AppBar, Typography, Box} from "@material-ui/core";
 
-function HeaderBar(props) {
+
+function HeaderBar() {
   return(
-    <AppBar height={600} position='static' className="app-bar">
-      <Typography variant="h6" >Andrew Fabian</Typography>
+    <AppBar position='static' className="app-bar">
+      <Toolbar>
+        <Box pt={2}>
+          <Typography variant="h1">
+            Andrew Fabian
+          </Typography>
+        </Box>
+      </Toolbar>
     </AppBar>
   );
 }

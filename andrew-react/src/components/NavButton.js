@@ -4,22 +4,48 @@ import Typography from "@material-ui/core/Typography";
 // import { sizing } from '@material-ui/system';
 // import PersonIcon from "@material-ui/icons/Person";
 import Icon from "@material-ui/core/Icon";
+import { Grid, Box, Container } from "@material-ui/core";
+import { spacing } from "@material-ui/system"
 
 
 
-function NavButton(props) {
+export default class NavButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {hover: false};
+    // this.handleHover = this.handleHover.bind()
+  }
 
-  return(
-      <div className="nav-button">
-        <Fab color="secondary" aria-label={props.text} className="nav-button" onClick={props.onClick}>
-          <Icon size="large">{props.icon}</Icon>
-        </Fab>
+  // handleHover() {
+  //   this.setState({hover: })
+  // }
 
-        <Typography variant='button' color='secondary' display="block">
-          {props.text}
-        </Typography>
-      </div>
-  );
+  render() {
+    return (
+      <Container display="flex" alignItems="center"
+               justifyContent="center">
+          <Box pb={1}
+               display="flex"
+               alignItems="center"
+               justifyContent="center">
+
+            <Fab color="secondary"
+                 aria-label={this.props.text}
+                 onClick={this.props.onClick}>
+              <Icon size="large">{this.props.icon}</Icon>
+            </Fab>
+          </Box>
+
+          <Box display="flex"
+               alignItems="center"
+               justifyContent="center">
+            <Typography variant='button' color='secondary' display="block">
+              {this.props.text}
+            </Typography>
+          </Box>
+      </Container>
+    );
+  }
 }
 
-export default NavButton;
+

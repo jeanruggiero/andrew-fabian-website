@@ -9,6 +9,8 @@ import HighlightsBar from "./components/HighlightsBar";
 import Footer from "./components/Footer";
 import ContentResume from "./components/ContentResume";
 import ContentContact from "./components/ContentContact";
+import { spacing } from '@material-ui/system';
+import {Box, Container} from "@material-ui/core";
 
 
 export default class App extends React.Component {
@@ -40,15 +42,21 @@ export default class App extends React.Component {
   render() {
     console.log("rendering");
     return (
-      <div>
-        <ThemeProvider theme={andrewTheme}>
+
+      <ThemeProvider theme={andrewTheme}>
           <HeaderBar/>
-          <NavBar onClick={this.handleClick}/>
-          {this.renderContent()}
-          <HighlightsBar/>
-          <Footer/>
-        </ThemeProvider>
-      </div>
+
+          <Box p={2}>
+            <NavBar onClick={this.handleClick}/>
+
+            {this.renderContent()}
+
+            <HighlightsBar/>
+
+            <Footer/>
+          </Box>
+      </ThemeProvider>
+
     );
   }
 };

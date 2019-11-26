@@ -1,11 +1,13 @@
 import NavButton from "./NavButton";
+import { spacing } from '@material-ui/system';
 import React from "react";
+import {Container, Box } from "@material-ui/core";
 
 const NavBar = (props) => {
 
   console.log(props)
   return (
-    <div className="nav-bar">
+    <Box className="nav-bar" pb={1} display="flex">
       <NavButton text='About'
                  icon="person"
                  onClick={() => props.onClick('about')}/>
@@ -21,7 +23,7 @@ const NavBar = (props) => {
       <NavButton text='Contact'
                  icon="email"
                  onClick={() => props.onClick('contact')}/>
-    </div>
+    </Box>
   )
 };
 

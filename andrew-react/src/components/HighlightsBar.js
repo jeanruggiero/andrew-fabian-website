@@ -1,17 +1,19 @@
 import React from "react";
-import Divider from "@material-ui/core/Divider";
+import {Typography, Box, Divider, Container} from "@material-ui/core";
 import Highlight from "./Highlight";
-import {Typography} from "@material-ui/core";
-
 
 const HighlightsBar = () => {
   return (
-    <div className="highlights-bar">
-      <Typography variant="overline">
-        Highlights
-      </Typography>
+    <Box>
+      <Box pl={1} pb={0.5}>
+        <Typography variant="overline">
+          Highlights
+        </Typography>
+      </Box>
 
-      <Divider />
+      <Box pb={1}>
+        <Divider />
+      </Box>
 
       <Highlight headline="Robo-AI Exchange"
         body="Andrew serves on the board of the MIT Robo-AI Exchange Conference. Register here!"
@@ -24,7 +26,7 @@ const HighlightsBar = () => {
         image_alt="MIT LGO Logo"/>
 
 
-    </div>
+    </Box>
   )
 };
 

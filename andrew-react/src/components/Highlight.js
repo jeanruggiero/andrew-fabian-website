@@ -1,13 +1,14 @@
 import React from "react";
-import Card from "@material-ui/core/Card";
-import Typography from "@material-ui/core/Typography";
+import {Card, CardContent, CardMedia, Typography} from "@material-ui/core";
 
 const Highlight = (props) => {
   return (
     <Card className="highlight" squared="true">
-      <img src={require('../images/' + props.image_file)}
-           alt={props.image_alt} />
-      <div className="highlight-text">
+      <CardMedia
+        image= {require('../images/' + props.image_file)}
+        title="Robo-AI Exchange" />
+
+      <CardContent>
         <Typography variant="h5">
           {props.headline}
         </Typography>
@@ -15,7 +16,7 @@ const Highlight = (props) => {
         <Typography variant="body2">
           {props.body}
         </Typography>
-      </div>
+      </CardContent>
     </Card>
   )
 };

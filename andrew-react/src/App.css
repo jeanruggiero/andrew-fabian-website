@@ -1,164 +1,161 @@
 
-.nav-bar {
-  margin-top: 20px;
-  text-align: center;
-}
+/*.nav-bar {*/
+/*  !*margin-top: 20px;*!*/
+/*  text-align: center;*/
+/*}*/
 
-div.nav-button {
-  text-align: center;
-  display: inline-block;
-  width: 25vw;
-}
+/*div.nav-button {*/
+/*  text-align: center;*/
+/*  display: inline-block;*/
+/*  width: 25vw;*/
+/*}*/
 
-button.nav-button {
-  margin-bottom: 6px;
-}
+/*button.nav-button {*/
+/*  margin-bottom: 6px;*/
+/*}*/
 
-.app-bar {
-  height: 56px;
-}
 
-.app-bar h6 {
-  margin: auto 0 auto 20px;
-}
+/*.app-bar h6 {*/
+/*  margin: auto 0 auto 20px;*/
+/*}*/
 
-.about-card p:first-of-type {
-  margin-bottom: 12px;
-}
+/*.about-card p:first-of-type {*/
+/*  margin-bottom: 12px;*/
+/*}*/
 
 .about-card img {
   width: 100%;
 }
 
-.about-card-text {
-  padding: 12px;
-}
+/*.about-card-text {*/
+/*  padding: 12px;*/
+/*}*/
 
-div.content {
-  padding: 15px;
-}
+/*div.content {*/
+/*  padding: 15px;*/
+/*}*/
 
-h2 {
-  padding: 30px 0 15px 0;
-}
+/*h2 {*/
+/*  padding: 30px 0 15px 0;*/
+/*}*/
 
-p {
-  padding-bottom: 15px;
-}
+/*p {*/
+/*  padding-bottom: 15px;*/
+/*}*/
 
-.content-text {
-  padding: 0 15px 0 15px;
-}
+/*.content-text {*/
+/*  padding: 0 15px 0 15px;*/
+/*}*/
 
 /*div.nav-icon span:hover {*/
 /*  color: */
 /*}*/
 
-.highlights-bar {
-    padding: 15px;
-}
+/*.highlights-bar {*/
+/*    padding: 15px;*/
+/*}*/
 
-.highlights-bar span {
-  padding-left: 5px;
-}
+/*.highlights-bar span {*/
+/*  padding-left: 5px;*/
+/*}*/
 
-.highlights-bar hr {
-  margin-bottom: 10px;
-}
+/*.highlights-bar hr {*/
+/*  margin-bottom: 10px;*/
+/*}*/
 
-.highlight {
-  margin-bottom: 10px;
-  height: 100px;
-}
+/*.highlight {*/
+/*  margin-bottom: 10px;*/
+/*  height: 100px;*/
+/*}*/
 
-.highlight img {
-  display: inline-block;
-  height: 100px;
-  width: 100px;
-  object-fit: cover;
+/*.highlight img {*/
+/*  display: inline-block;*/
+/*  height: 100px;*/
+/*  width: 100px;*/
+/*  object-fit: cover;*/
 
-}
+/*}*/
 
-.highlight-text {
-  padding: 10px 10px 0 10px;
-  display: inline-block;
-  vertical-align: top;
-  height: content-box;
-  width: 60vw;
-}
+/*.highlight-text {*/
+/*  padding: 10px 10px 0 10px;*/
+/*  display: inline-block;*/
+/*  vertical-align: top;*/
+/*  height: content-box;*/
+/*  width: 60vw;*/
+/*}*/
 
-.highlight-text p {
-  padding: 0;
-}
+/*.highlight-text p {*/
+/*  padding: 0;*/
+/*}*/
 
-.highlight h5 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19px;
-  margin-bottom: 5px;
-}
+/*.highlight h5 {*/
+/*  font-size: 16px;*/
+/*  font-weight: 500;*/
+/*  line-height: 19px;*/
+/*  margin-bottom: 5px;*/
+/*}*/
 
-.highlight p {
-  font-size: 12px;
-}
+/*.highlight p {*/
+/*  font-size: 12px;*/
+/*}*/
 
-.footer {
- text-align: center;
-  margin-top: 20px;
-}
+/*.footer {*/
+/*  text-align: center;*/
+/*  margin-top: 20px;*/
+/*}*/
 
-.footer p {
-  font-size: 10px;
-}
+/*.footer p {*/
+/*  font-size: 10px;*/
+/*}*/
 
-.content-resume span {
-  display: block;
-  color: black;
-  font-size: 0.7em;
-  line-height: 1.2em;
-  font-weight: normal;
-  margin-bottom: 5px;
+/*.content-resume span {*/
+/*  display: block;*/
+/*  color: black;*/
+/*  font-size: 0.7em;*/
+/*  line-height: 1.2em;*/
+/*  font-weight: normal;*/
+/*  margin-bottom: 5px;*/
 
-}
+/*}*/
 
-.content-resume h4 {
-  font-size: 1.1em;
-  font-family: Merriweather, serif;
-}
+/*.content-resume h4 {*/
+/*  font-size: 1.1em;*/
+/*  font-family: Merriweather, serif;*/
+/*}*/
 
-.content-resume p {
-  font-size: 0.8em;
-  font-family: Merriweather, serif;
-  padding: 0
+/*.content-resume p {*/
+/*  font-size: 0.8em;*/
+/*  font-family: Merriweather, serif;*/
+/*  padding: 0*/
 
-}
+/*}*/
 
-.resume-item>p {
-  color: #616161;
-}
+/*.resume-item>p {*/
+/*  color: #616161;*/
+/*}*/
 
-.resume-date p {
-  display: inline-block;
-  padding-bottom: 5px;
-  padding-right: 30px;
-}
+/*.resume-date p {*/
+/*  display: inline-block;*/
+/*  padding-bottom: 5px;*/
+/*  padding-right: 30px;*/
+/*}*/
 
-.resume-item {
-  padding-bottom: 25px;
-}
+/*.resume-item {*/
+/*  padding-bottom: 25px;*/
+/*}*/
 
-.contact-info * {
-  display: inline;
-  vertical-align: middle;
-  padding-right: 8px;
+/*.contact-info * {*/
+/*  display: inline;*/
+/*  vertical-align: middle;*/
+/*  padding-right: 8px;*/
 
-}
+/*}*/
 
-.contact-info {
-  padding: 10px;
-}
+/*.contact-info {*/
+/*  padding: 10px;*/
+/*}*/
 
-a {
-  text-decoration: none;
-  font-weight: bold;
-}
+/*a {*/
+/*  text-decoration: none;*/
+/*  font-weight: bold;*/
+/*}*/

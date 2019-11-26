@@ -6,7 +6,7 @@ const ResumeItem = (props) => {
   let gpa;
 
   if (props.gpa) {
-    gpa = (<Typography variant="body2">
+    gpa = (<Typography variant="body1">
             {props.gpa}
           </Typography>)
   }
@@ -17,19 +17,19 @@ const ResumeItem = (props) => {
         {props.company}
       </Typography>
 
-      <Typography variant="h4">
+      <Typography variant="h3">
         {props.title}
       </Typography>
 
       <div className="resume-date">
-        <Typography variant="body2">
+        <Typography variant="body1">
           {props.date}
         </Typography>
 
         {gpa}
       </div>
 
-      <Typography variant="body2">
+      <Typography variant="body1">
         {props.children}
       </Typography>
     </div>
