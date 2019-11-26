@@ -13,7 +13,7 @@ import ContentContact from "./components/ContentContact";
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {panel: 'contact'};
+    this.state = {panel: 'about'};
     this.handleClick = this.handleClick.bind(this)
   }
 
