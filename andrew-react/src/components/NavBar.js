@@ -1,7 +1,6 @@
-import NavButton from "./NavButton";
-import { spacing } from '@material-ui/system';
 import React from "react";
-import {Container, Box } from "@material-ui/core";
+import { Box } from "@material-ui/core";
+import NavButton from "./NavButton";
 
 const NavBar = (props) => {
 

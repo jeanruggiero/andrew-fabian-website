@@ -1,16 +1,14 @@
 import React from 'react';
-import HeaderBar from "./components/HeaderBar";
+import { Box } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/core/styles"
 import andrewTheme from "./styles";
+import HeaderBar from "./components/HeaderBar";
 import NavBar from "./components/NavBar";
 import ContentAbout from "./components/ContentAbout"
 import HighlightsBar from "./components/HighlightsBar";
 import Footer from "./components/Footer";
 import ContentResume from "./components/ContentResume";
 import ContentContact from "./components/ContentContact";
-import { spacing } from '@material-ui/system';
-import {Box, Container} from "@material-ui/core";
-
 
 export default class App extends React.Component {
   constructor(props) {
