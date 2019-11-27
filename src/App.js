@@ -15,7 +15,7 @@ import Sidebar from "./components/Sidebar"
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {panel: 'resume'};
+    this.state = {panel: 'about'};
     this.handleClick = this.handleClick.bind(this)
   }
 
