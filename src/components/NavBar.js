@@ -1,27 +1,45 @@
 import React from "react";
-import { Box } from "@material-ui/core";
+import { Box, Grid } from "@material-ui/core";
 import NavButton from "./NavButton";
 
 const NavBar = (props) => {
 
-  console.log(props)
   return (
-    <Box className="nav-bar" pb={1} display="flex">
-      <NavButton text='About'
-                 icon="person"
-                 onClick={() => props.onClick('about')}/>
+    <Box pb={1}>
+      <Grid container>
 
-      <NavButton text='Resume'
-                 icon="format_align_left"
-                 onClick={() => props.onClick('resume')}/>
+        <Grid item xs>
+          <Box display="flex" justifyContent="center">
+            <NavButton text='About'
+                       icon="person"
+                       onClick={() => props.onClick('about')}/>
+          </Box>
+        </Grid>
 
-      {/*<NavButton text='Projects'*/}
-      {/*           icon="file_copy"*/}
-      {/*           onClick={() => props.onClick('projects')}/>*/}
 
-      <NavButton text='Contact'
-                 icon="email"
-                 onClick={() => props.onClick('contact')}/>
+        <Grid item xs>
+          <Box display="flex" justifyContent="center">
+            <NavButton text='Resume'
+                       icon="format_align_left"
+                       onClick={() => props.onClick('resume')}/>
+          </Box>
+        </Grid>
+
+
+        {/*<NavButton text='Projects'*/}
+        {/*           icon="file_copy"*/}
+        {/*           onClick={() => props.onClick('projects')}/>*/}
+
+
+        <Grid item xs>
+          <Box display="flex" justifyContent="center">
+            <NavButton text='Contact'
+                       icon="email"
+                       onClick={() => props.onClick('contact')}/>
+          </Box>
+        </Grid>
+      </Grid>
+
     </Box>
   )
 };

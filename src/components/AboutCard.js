@@ -1,15 +1,15 @@
 import React from "react";
 import { Card, CardContent, CardMedia, Typography, Box } from "@material-ui/core";
 
-const AboutCard = () => {
+const AboutCard = (props) => {
   return (
-    <Card elevation={1}>
+    <Card elevation={1} className={props.class}>
       <CardMedia
         component="img"
         image={require("../images/fabian_headshot_rect.jpg")}
         title="Andrew Fabian" />
 
-      <CardContent className="about-card-text">
+      <CardContent>
         <Box pb={1.5}>
           <Typography variant="h4">
             Andrew Fabian

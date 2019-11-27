@@ -130,7 +130,7 @@ const ContentResume = () => {
 
       <ResumeItem company="MIT-Gordon Engineering Leadership Program"
                   title="Volunteer Mentor"
-                  date="2019 &ndash; Present">
+                  date="2019">
         <ResumeParagraph>
           Provided guidance to an engineering undergraduate student on various topics including education and career planning.
         </ResumeParagraph>

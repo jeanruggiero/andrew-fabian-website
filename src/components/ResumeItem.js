@@ -1,16 +1,31 @@
 import React from "react";
-import {Box, Typography } from "@material-ui/core";
+import {Box, Typography, Grid, Hidden} from "@material-ui/core";
 
 const ResumeItem = (props) => {
-  let gpa;
+  let schoolCol = props.gpa? 10 : 12;
+
+  let gpasm;
+  let gpalg;
 
   if (props.gpa) {
-    gpa = (
+    gpasm = (
       <Box display="inline-block" pl="30px">
-        <Typography variant="body1">
+        <Typography variant="body1" style={{textAlign: "right"}}>
           {props.gpa}
         </Typography>
       </Box>)
+
+    gpalg = (
+      <Hidden mdDown>
+        <Grid item lg={2}>
+          <Box>
+            <Typography variant="body1" style={{textAlign: "right"}}>
+              {props.gpa}
+            </Typography>
+          </Box>
+        </Grid>
+      </Hidden>
+    )
   }
 
   return (
@@ -22,22 +37,46 @@ const ResumeItem = (props) => {
       </Box>
 
       <Box pb={0.2}>
-        <Typography variant="h3">
-          {props.title}
-        </Typography>
+        <Grid container>
+          <Grid item xs={12} lg={10}>
+            <Typography variant="h3">
+              {props.title}
+            </Typography>
+          </Grid>
+
+          <Hidden mdDown>
+            <Grid item lg={2}>
+              <Box >
+                <Typography variant="body1" color="textPrimary" style={{textAlign: "right"}}>
+                  {props.date}
+                </Typography>
+              </Box>
+            </Grid>
+          </Hidden>
+        </Grid>
       </Box>
 
-      <Box>
-        <Box display="inline-block">
-          <Typography variant="body1" color="textPrimary">
-            {props.date}
-          </Typography>
+      <Hidden lgUp>
+        <Box>
+          <Box display="inline-block">
+            <Typography variant="body1" color="textPrimary">
+              {props.date}
+            </Typography>
+          </Box>
+
+          {gpasm}
         </Box>
+      </Hidden>
 
-        {gpa}
-      </Box>
+      <Grid container>
+        <Grid item xs={12} lg={schoolCol}>
+          <Box pt={0.7}>
+            {props.children}
+          </Box>
+        </Grid>
 
-        {props.children}
+        {gpalg}
+      </Grid>
     </Box>
   )
 };

@@ -3,7 +3,7 @@ import {Box, Card, CardContent, CardMedia, Typography, Link } from "@material-ui
 
 const Highlight = (props) => {
   return (
-    <Box pb={1.5} className="highlight">
+    <Box pb={0} className="highlight" width="100%">
       <Link href={props.link}>
         <Card style={{height: 100}} elevation={3}>
           <CardMedia
@@ -11,7 +11,6 @@ const Highlight = (props) => {
               height: 100,
               width: 100,
               display: 'inline-block',
-              objectFit: 'cover'
               }}
             component="img"
             image= {require('../images/' + props.image_file)}
@@ -20,15 +19,17 @@ const Highlight = (props) => {
 
           <CardContent style={{
                           display: "inline-block",
-                          width: "55vw",
+                          width: "60%",
                           verticalAlign: 'top',
-                          paddingBottom: 0
+                          padding: '8px'
                           }}>
-            <Typography variant="h5">
-              {props.headline}
-            </Typography>
+            <Box pb={0.5}>
+              <Typography variant="h5">
+                {props.headline}
+              </Typography>
+            </Box>
 
-            <Typography variant="body2">
+            <Typography variant="body2" style={{lineHeight: 1.2}}>
               {props.body}
             </Typography>
           </CardContent>

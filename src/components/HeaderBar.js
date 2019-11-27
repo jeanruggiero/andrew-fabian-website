@@ -4,7 +4,7 @@ import {Toolbar, AppBar, Typography } from "@material-ui/core";
 
 function HeaderBar() {
   return(
-    <AppBar position='static' className="app-bar">
+    <AppBar position='static'>
       <Toolbar>
         <Typography variant="h1">
           Andrew Fabian
