@@ -67,15 +67,10 @@ export default class App extends React.Component {
               </Grid>
             </Hidden>
 
-
-
             <Grid item sm={8} md={6} lg={6}>
               <NavBar onClick={this.handleClick}/>
 
               {this.renderContent()}
-
-                
-
             </Grid>
           </Grid>
 

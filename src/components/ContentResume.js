@@ -140,7 +140,7 @@ const ContentResume = () => {
                   title="Olin SCOPE Project Sponsor"
                   date="2017 &ndash; 2019">
         <ResumeParagraph>
-          Organized a Boeing-funded an engineering senior design project (SCOPE) at Olin College and provided support and guidance to teams of students
+          Organized a Boeing-funded engineering senior design project (SCOPE) at Olin College and provided support and guidance to teams of students
         </ResumeParagraph>
       </ResumeItem>
 
@@ -162,7 +162,7 @@ const ContentResume = () => {
       </Box>
       <Typography variant="body1">
         <ResumeParagraph>
-          mechanical design and analysis, Python, MATLAB, Simulink, R, SolidWorks
+          Mechanical design and analysis, Python, MATLAB, Simulink, R, SolidWorks
         </ResumeParagraph>
       </Typography>
 
