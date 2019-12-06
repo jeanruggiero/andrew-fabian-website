@@ -4,7 +4,12 @@ import NavButton from "./NavButton";
 
 const NavBar = (props) => {
 
+  let aboutActive = (props.panel === "about");
+  let resumeActive = (props.panel === "resume");
+  let contactActive = (props.panel === "contact");
+
   return (
+
     <Box pb={1}>
       <Grid container>
 
@@ -12,6 +17,7 @@ const NavBar = (props) => {
           <Box display="flex" justifyContent="center">
             <NavButton text='About'
                        icon="person"
+                       active={aboutActive}
                        onClick={() => props.onClick('about')}/>
           </Box>
         </Grid>
@@ -21,6 +27,7 @@ const NavBar = (props) => {
           <Box display="flex" justifyContent="center">
             <NavButton text='Resume'
                        icon="format_align_left"
+                       active={resumeActive}
                        onClick={() => props.onClick('resume')}/>
           </Box>
         </Grid>
@@ -35,6 +42,7 @@ const NavBar = (props) => {
           <Box display="flex" justifyContent="center">
             <NavButton text='Contact'
                        icon="email"
+                       active={contactActive}
                        onClick={() => props.onClick('contact')}/>
           </Box>
         </Grid>

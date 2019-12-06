@@ -1,5 +1,5 @@
 import React from "react";
-import {Box, Hidden, Typography, useMediaQuery, useTheme} from "@material-ui/core";
+import {Box, Hidden, Typography } from "@material-ui/core";
 import AboutCard from "./AboutCard";
 
 const ContentAbout = () => {

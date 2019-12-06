@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, useMediaQuery, Grid, useTheme, Hidden} from "@material-ui/core";
+import {Box, Grid, Hidden} from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/core/styles"
 import andrewTheme from "./styles";
 import HeaderBar from "./components/HeaderBar";
@@ -37,17 +37,6 @@ export default class App extends React.Component {
   }
 
   render() {
-    if (andrewTheme.breakpoints.up('sm')) {
-      console.log('bigger than small')
-
-
-    } else {
-      console.log('smaller than small')
-    }
-
-    console.log(andrewTheme.breakpoints);
-
-
     return (
       <ThemeProvider theme={andrewTheme}>
         <HeaderBar/>
@@ -68,7 +57,7 @@ export default class App extends React.Component {
             </Hidden>
 
             <Grid item sm={8} md={6} lg={6}>
-              <NavBar onClick={this.handleClick}/>
+              <NavBar panel={this.state.panel} onClick={this.handleClick}/>
 
               {this.renderContent()}
             </Grid>
