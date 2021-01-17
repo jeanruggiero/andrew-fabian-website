@@ -1,3 +1,5 @@
+if: branch = master
+
 language: node_js
 node_js:
   - "stable"
@@ -14,3 +16,4 @@ deploy:
   bucket: "andrew-fabian-website"
   local_dir: "build"
   skip_cleanup: true
+  region: us-west-2
