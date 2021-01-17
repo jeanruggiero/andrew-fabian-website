@@ -25,4 +25,5 @@ deploy:
   region: us-west-2
 
 after_deploy:
+  - sudo apt-get install awscli
   - aws cloudfront create-invalidation --distribution-id E1E6NAY17UFOG4 --paths "/*"
