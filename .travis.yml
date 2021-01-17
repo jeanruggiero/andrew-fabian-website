@@ -1,11 +1,17 @@
 if: branch = master
 
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install awscli
+
 language: node_js
+
 node_js:
   - "stable"
 cache:
   directories:
   - node_modules
+
 script:
   - yarn build
 
