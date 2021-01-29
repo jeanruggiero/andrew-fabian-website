@@ -41,23 +41,20 @@ const ContentResume = () => {
 
       <ResumeHeader>Experience</ResumeHeader>
 
-      <ResumeItem company="the boeing company"
-                  title="Propulsion Safety Lead Engineer"
-                  date="2016 &ndash; 2019">
+      <ResumeItem company="corning"
+                  title="Graduate Research Co-op, Additive Manufacturing"
+                  date="2020">
         <ResumeParagraph>
-          Led five-person team in developing and implementing Propulsion safety strategy for all in-production programs
+          Created operational and financial tools to improve efficiency, utilization, and adoption of additive manufacturing
         </ResumeParagraph>
-        
+
         <ResumeParagraph>
-          Defined Propulsion technical positions for high profile potential in-service safety issues
-        </ResumeParagraph>
-        
-        <ResumeParagraph>
-          Led a separate four-person team in developing and maintaining a database capable of delivering accurate and readily available propulsion safety data critical to airplane safety assessments and regulatory fleet reliability reporting
+          Developed a roadmap for qualifying additive manufacturing for high-volume production
         </ResumeParagraph>
       </ResumeItem>
 
-      <ResumeItem title="Manager, 737 Manufacturing Operations (Acting)"
+      <ResumeItem company="the boeing company"
+                  title="Manager, 737 Manufacturing Operations (Acting)"
                   date="2018 &ndash; 2019">
         <ResumeParagraph>
           Recruited as an Acting Manager in standing up a temporary organization to help resolve critical factory delays
@@ -79,6 +76,23 @@ const ContentResume = () => {
           Met aggressive build schedule allowing significant downsizing of temporary organization within six months of initiation
         </ResumeParagraph>
       </ResumeItem>
+
+
+      <ResumeItem title="Propulsion Safety Lead Engineer"
+                  date="2016 &ndash; 2018">
+        <ResumeParagraph>
+          Led five-person team in developing and implementing Propulsion safety strategy for all in-production programs
+        </ResumeParagraph>
+        
+        <ResumeParagraph>
+          Defined Propulsion technical positions for high profile potential in-service safety issues
+        </ResumeParagraph>
+        
+        <ResumeParagraph>
+          Led a separate four-person team in developing and maintaining a database capable of delivering accurate and readily available propulsion safety data critical to airplane safety assessments and regulatory fleet reliability reporting
+        </ResumeParagraph>
+      </ResumeItem>
+
 
       <ResumeItem title="Propulsion Systems Division Rotation Program"
                   date="2015 &ndash; 2016">

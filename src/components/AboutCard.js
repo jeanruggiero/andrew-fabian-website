@@ -21,7 +21,7 @@ const AboutCard = (props) => {
         </Box>
 
         <Typography variant="body2">
-          Andrew is a graduate student and mechanical engineer at Boeing. He is currently on sabbatical while pursuing degrees in engineering and business in the MIT Leaders for Global Operations Program.
+          Andrew is a graduate student with engineering and manufacturing leadership experience at Boeing. He is currently on sabbatical while pursuing degrees in engineering and business in the MIT Leaders for Global Operations Program.
         </Typography>
       </CardContent>
     </Card>

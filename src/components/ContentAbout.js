@@ -22,11 +22,15 @@ const ContentAbout = () => {
         </Box>
 
         <Typography variant="body1" paragraph>
-          Andrew is a mechanical engineer at Boeing and a graduate student in the MIT Leaders for Global Operations Program. He is currently pursuing masters degrees in mechanical engineering (MS) and business administration (MBA). His academic interests include operations management, systems thinking, and organizational processes. He is currently working on his thesis, which explores the integration of additive manufacturing processes within established manufacturing companies. He is active in the LGO Director’s Advisory Committee and Partner Relations Committee. He also serves on the board of the MIT Robo-AI Exchange conference.
+          Andrew is a graduate student in the MIT Leaders for Global Operations Program with previous experience at Boeing in engineering, manufacturing, and management. He is excited to return to Boeing in the summer of 2021 and looking for impactful leadership roles where he can contribute and continue to learn. Areas of interest include roles supporting production stabilization and production improvement efforts such as operational excellence, One Boeing Production System, production engineering, advanced manufacturing, and factory support.
         </Typography>
 
         <Typography variant="body1" paragraph>
-          Andrew has held several roles in the Propulsion Systems Division at Boeing. His most recent role was Lead Engineer in Propulsion Safety and Airworthiness. Previously, he was an Operations Manager on the 737 flightline. He has participated in several leadership development programs, including the Propulsion Leadership Dimensions Program.
+          Andrew is currently pursuing masters degrees in mechanical engineering (MS) and business administration (MBA). His academic interests include operations management, systems thinking, and organizational processes. He is currently working on his thesis, which explores the integration of additive manufacturing processes within established manufacturing companies. He is active in the LGO Director’s Advisory Committee and Partner Relations Committee. He also serves on the board of the MIT Robo-AI Exchange conference.
+        </Typography>
+
+        <Typography variant="body1" paragraph>
+          Previously, Andrew was an Operations Manager on the 737 flight line. Andrew has also held several roles in the Propulsion Systems Division at Boeing. His most recent role was Lead Engineer in Propulsion Safety and Airworthiness. He has participated in several leadership development programs, including the Propulsion Leadership Dimensions Program.
         </Typography>
 
         <Typography variant="body1" paragraph>
